@@ -19,15 +19,6 @@ const Todo = () => {
         setTodos(todos.filter((todo) => todo.id !== id));
     };
 
-    // Función para alternar el estado de completado (si se necesita)
-    const toggleComplete = (id) => {
-        setTodos(
-            todos.map((todo) =>
-                todo.id === id ? { ...todo, completed: !todo.completed } : todo
-            )
-        );
-    };
-
     return (
         <div className="todo-container">
             <h1>Todo List</h1>
